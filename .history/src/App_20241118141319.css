@@ -1,0 +1,36 @@
+/* global.css */
+
+/* Center the content */
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Center horizontally */
+  justify-content: center;  /* Center vertically */
+  min-height: 100vh; /* Ensure full viewport height */
+  text-align: center; /* Center the text */
+  padding: 1rem;
+}
+
+/* Increase the size of the flag and make the text centered */
+.flag {
+  width: 200px;  /* Make the flag bigger */
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.country-name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.official-name,
+.capital,
+.location {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+strong {
+  font-weight: bold;
+}

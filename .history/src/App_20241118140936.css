@@ -1,0 +1,25 @@
+/* global.css */
+
+/* Increase font sizes for main headings and paragraphs */
+.country-name {
+  font-size: 2rem;  /* Larger font for the country name */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.flag {
+  width: 150px; /* Increase flag size */
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.official-name,
+.capital,
+.location {
+  font-size: 1.25rem;  /* Increase font size for these details */
+  margin-bottom: 0.75rem;
+}
+
+strong {
+  font-weight: bold;
+}
