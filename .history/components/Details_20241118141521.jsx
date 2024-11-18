@@ -3,9 +3,8 @@ import { useLocation } from 'react-router-dom';
 
 const Details = () => {
   const { state } = useLocation();
-  const { country } = state || {};  // Destructure to prevent errors
+  const { country } = state || {};
 
-  // If no country is passed in the state, show an error message
   if (!country) {
     return <p>Country data not available.</p>;
   }
@@ -19,7 +18,6 @@ const Details = () => {
         className="flag"
       />
       <p className="official-name">
-        
       </p>
       <p className="capital">
         <strong>Capital:</strong> {country.capital?.[0] || 'N/A'}

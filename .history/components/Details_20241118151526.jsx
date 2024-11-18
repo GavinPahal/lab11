@@ -19,7 +19,7 @@ const Details = () => {
         className="flag"
       />
       <p className="official-name">
-        
+        <strong>Official Name:</strong> {country.name.official || 'N/A'}
       </p>
       <p className="capital">
         <strong>Capital:</strong> {country.capital?.[0] || 'N/A'}

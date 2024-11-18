@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Countries from "../components/Countries";
-import Details from "../components/Details";
+import Countries from './components/Countries';
+import Details from './components/Details';
 
 const App = () => (
   <BrowserRouter basename="/world-kingdoms">

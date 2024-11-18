@@ -6,7 +6,6 @@ const Countries = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Fetch the countries data
     fetch('https://restcountries.com/v3.1/name/kingdom')
       .then((response) => response.json())
       .then((data) => setCountries(data))
@@ -14,12 +13,10 @@ const Countries = () => {
   }, []);
 
   const handleSelect = (event) => {
-    // Find the selected country based on its cca2 code
     const selectedCountry = countries.find(
       (country) => country.cca2 === event.target.value
     );
     if (selectedCountry) {
-      // Navigate to the details page and pass the country data in state
       navigate(`/countries/${selectedCountry.cca2}`, {
         state: { country: selectedCountry },
       });
@@ -39,7 +36,7 @@ const Countries = () => {
           </option>
         ))}
       </select>
-      <Outlet /> {/* Outlet for rendering the nested route (Details) */}
+      <Outlet />
     </div>
   );
 };
