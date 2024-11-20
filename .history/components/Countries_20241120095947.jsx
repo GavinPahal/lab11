@@ -13,6 +13,7 @@ const Countries = () => {
   }, []);
 
   const handleSelect = (event) => {
+    // Find the selected country based on its cca2 code
     const selectedCountry = countries.find(
       (country) => country.cca2 === event.target.value
     );
@@ -36,7 +37,7 @@ const Countries = () => {
           </option>
         ))}
       </select>
-      <Outlet /> 
+      <Outlet /> {/* Outlet for rendering the nested route (Details) */}
     </div>
   );
 };

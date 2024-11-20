@@ -36,7 +36,7 @@ const Countries = () => {
           </option>
         ))}
       </select>
-      <Outlet /> 
+      <Outlet /> {/* Outlet for rendering the nested route (Details) */}
     </div>
   );
 };
